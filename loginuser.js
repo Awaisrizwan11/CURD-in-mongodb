@@ -19,7 +19,6 @@ winston.add(new winston.transports.MongoDB({
 
 app.use(express.json())
 
-
 mongoose.connect('mongodb://localhost/logindb', {
         useNewUrlParser: true,
         useUnifiedTopology: true,
@@ -49,7 +48,6 @@ const User = mongoose.model('User', new mongoose.Schema({
         minlength: 5,
         maxlength: 1024
     },
-
 
 
 }))
